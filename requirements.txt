@@ -1,0 +1,9 @@
+folium
+phonenumbers
+opencage
+geocoder
+requests
+pillow
+pyfiglet
+termcolor
+geopy
