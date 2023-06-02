@@ -38,13 +38,13 @@ def phonetrack():
             api = input("Which api do you prefer, enter 1 for google or enter 2 for opencage:")
             if api == "2":
                 print(
-                    "HINT: pls visit https://opencagedata.com and signup for your api keys. For a better result you can \n their"
-                    "purchase or priced one instead of the free-trial but any of them will worked")
+                    "HINT: pls visit 'https://opencagedata.com' and signup for your api keys. For a better result you can \n"
+                    "purchase the  priced one instead of the free-trial but any of them will worked")
                 key = input("Paste your api key:")
                 geocoder = OpenCageGeocode(key)
                 query = str(tarloca)
                 result = geocoder.geocode(query)
-                pprint(result)
+                pprint(f"" giving additional info about target's number...{result} ")
 
                 lat = result[0]['geometry']['lat']
                 lng = result[0]['geometry']['lng']
