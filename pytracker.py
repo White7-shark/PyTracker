@@ -31,23 +31,23 @@ def phonetrack():
         print("checking if carrier is specific...", phonenumbers.is_carrier_specific(ser_par))
 
         from opencage.geocoder import OpenCageGeocode
-
+        print(" ")
         map = input("Do you want a map for the target location, Enter Y/N:")
         umap = str.lower(map)
         if umap == "y":
             api = input("Which api do you prefer, enter 1 for google or enter 2 for opencage:")
-            print()
+            print("  ")
             if api == "2":
                 print(
                     "HINT: pls visit 'https://opencagedata.com' and signup for your api keys. For a better result you can \n"
                     "purchase the  priced one instead of the free-trial but any of them will worked")
-                print()
+                print(" ")
                 key = input("Paste your api key:")
                 geocoder = OpenCageGeocode(key)
                 query = str(tarloca)
                 result = geocoder.geocode(query)
                 print("Giving extra information about target's number...")
-                print()
+                print(" ")
                 pprint(result)
 
                 lat = result[0]['geometry']['lat']
