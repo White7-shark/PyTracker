@@ -36,7 +36,7 @@ def phonetrack():
         umap = str.lower(map)
         if umap == "y":
             api = input("Which api do you prefer, enter 1 for google or enter 2 for opencage:")
-            if api == 2:
+            if api == "2":
                 print(
                     "HINT: pls visit https://opencagedata.com and signup for your api keys. For a better result you can \n their"
                     "purchase or priced one instead of the free-trial but any of them will worked")
@@ -53,7 +53,7 @@ def phonetrack():
                 maploca.save("Targetlocation.html")
                 print("please the map has been saved in your current directory with the name Targetlocation.html \n "
                       "open to view the map")
-            elif api == 1:
+            elif api == "1":
                 print("HINT:please visit https://developers.google.com/maps/documentation/geocoding/overview to get or"
                       "purchase your api, google has a free trial so you can use that.")
                 import requests
