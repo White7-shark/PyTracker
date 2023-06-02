@@ -320,7 +320,7 @@ def exif():
 import pyfiglet
 from termcolor import colored
 
-text = "sharktracker"
+text = "PyTracker"
 
 # Generate the banner
 banner = pyfiglet.figlet_format(text)
