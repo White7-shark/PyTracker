@@ -1,6 +1,8 @@
-#This tool is for educational and legal purpose only , use it illegally at your own risk !!!
-#You will need stable and good internet connection to make the tool run accurately
-#The ownner of this script will not be responsible for any damage or illegal activities used for this script, you do that at your own risk!
+#This tool is for educational and legal purpose only , use it illegally at your own risk !!!.
+
+#You will need stable and good internet connection to make the tool run accurately.
+
+#The ownner of this script will not be responsible for any damage or illegal activities used for this script, you do that at your own risk!.
 
 ##INSTALLATION##
 git clone https://github.com/White7-shark/SharkTracker.git
