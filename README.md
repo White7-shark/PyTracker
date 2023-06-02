@@ -1,21 +1,23 @@
 #This tool is for educational and legal purpose only , use it illegally at your own risk !!!
 #You will need stable and good internet connection to make the tool run accurately
+#The ownner of this script will not be responsible for any damage or illegal activities used for this script, you do that at your own risk!
 
 ##INSTALLATION##
 git clone https://github.com/White7-shark/SharkTracker.git
-cd SharkTracker
+cd PyTracker
 pip install -r requirements.txt
-chmod +x sharktracker.py
+chmod +x pytracker.py
 
 
 ##USAGE##
-python3 sharktracker.py
+python3 pytracker.py
 choose your option to run
 
 ##OPTIONS##
 1. phone number
  when using option1 to track or get information for a particular phone number , add the region or country code attach the number
 for eg +14842989271 , +1 is the country code
+You made an api for the full output or result of this option. The link for the api will be given to you in the output of the script
 
 2.ip address
  when using option 2, please use a coreect or valid ip address , else it will return an error
