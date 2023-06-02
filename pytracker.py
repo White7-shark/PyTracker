@@ -36,15 +36,19 @@ def phonetrack():
         umap = str.lower(map)
         if umap == "y":
             api = input("Which api do you prefer, enter 1 for google or enter 2 for opencage:")
+            print()
             if api == "2":
                 print(
                     "HINT: pls visit 'https://opencagedata.com' and signup for your api keys. For a better result you can \n"
                     "purchase the  priced one instead of the free-trial but any of them will worked")
+                print()
                 key = input("Paste your api key:")
                 geocoder = OpenCageGeocode(key)
                 query = str(tarloca)
                 result = geocoder.geocode(query)
-                pprint(f"" giving additional info about target's number...{result} ")
+                print("Giving extra information about target's number...")
+                print()
+                pprint(result)
 
                 lat = result[0]['geometry']['lat']
                 lng = result[0]['geometry']['lng']
@@ -135,8 +139,8 @@ def iptrack():
 
         # Save the map to the HTML file
         map.save("iplocation.html")
-        print("The map for the target location is saved in your current directory with the name 'iplocation.html'.")
-        print("IP coordinates: Latitude =", lat, "Longitude =", lng)
+        print("\n" + "The map for the target location is saved in your current directory with the name 'iplocation.html'.")
+        print("\n" + "IP coordinates: Latitude =", lat, "Longitude =", lng)
     else:
         print("Failed to retrieve geolocation for the IP address.")
 
@@ -333,13 +337,13 @@ menu_color = "green"
 print(colored("          version 1.0", color=menu_color))
 print(colored("          created by: Young Shark", color=menu_color))
 print("---------------------------------------------")
-print(colored("1.Track phone number", color=menu_color))
-print(colored("2.Track ip address", color=menu_color))
-print(colored("3.Track coordinates", color=menu_color))
-print(colored("4.Get a geolocation. Note this gets location of a device with non geolocation feeature"
+print"\n" + (colored("1.Track phone number", color=menu_color))
+print("\n" + (colored("2.Track ip address", color=menu_color))
+print("\n" + colored("3.Track coordinates", color=menu_color))
+print("\n" + colored("4.Get a geolocation. Note this gets location of a device with non geolocation feeature"
               "or gps from a cell tower or a wifi access point, you can read more from Google geolocation"
               "and it requires google geolocation api", color=menu_color))
-print(colored("5.Track location from exif data", color=menu_color))
+print("\n" + colored("5.Track location from exif data", color=menu_color))
 print(colored("---------------------------------------------------------", color=menu_color))
 print(" ")
 options = input(colored("Enter 1,2,3,4 or 5:", color=menu_color))
