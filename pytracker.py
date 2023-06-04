@@ -337,7 +337,7 @@ menu_color = "green"
 print(colored("          version 1.0", color=menu_color))
 print(colored("          created by: Young Shark", color=menu_color))
 print("---------------------------------------------")
-print"\n" + (colored("1.Track phone number", color=menu_color))
+print("\n" + (colored("1.Track phone number", color=menu_color))
 print("\n" + (colored("2.Track ip address", color=menu_color))
 print("\n" + colored("3.Track coordinates", color=menu_color))
 print("\n" + colored("4.Get a geolocation. Note this gets location of a device with non geolocation feeature"
